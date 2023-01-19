@@ -1,0 +1,113 @@
+{
+    "alertRules": [],
+    "alertTime": 1654275840076,
+    "firstSeen": 1645167762811,
+    "history": [
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654275840076,
+            "reason": "RESOURCE_UPDATED",
+            "status": "resolved"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654274044744,
+            "reason": "RESOURCE_UPDATED",
+            "status": "open"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654272839402,
+            "reason": "RESOURCE_UPDATED",
+            "status": "resolved"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654271653456,
+            "reason": "RESOURCE_UPDATED",
+            "status": "open"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654267442695,
+            "reason": "RESOURCE_UPDATED",
+            "status": "resolved"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654265645730,
+            "reason": "RESOURCE_UPDATED",
+            "status": "open"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654264437952,
+            "reason": "RESOURCE_UPDATED",
+            "status": "resolved"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654263244548,
+            "reason": "RESOURCE_UPDATED",
+            "status": "open"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654261444933,
+            "reason": "RESOURCE_UPDATED",
+            "status": "resolved"
+        },
+        {
+            "modifiedBy": "Prisma Cloud",
+            "modifiedOn": 1654259647162,
+            "reason": "RESOURCE_UPDATED",
+            "status": "open"
+        }
+    ],
+    "id": "N-2770514",
+    "investigateOptions": {
+        "alertId": "N-2770514"
+    },
+    "lastSeen": 1654275840076,
+    "lastUpdated": 1654275840076,
+    "metadata": null,
+    "policy": {
+        "deleted": false,
+        "description": "This policy identifies EC2 instances that allow unrestricted outbound traffic to the internet. As a best practice, restrict outbound traffic and limit the access to known hosts or services.",
+        "labels": [],
+        "lastModifiedBy": "template@redlock.io",
+        "lastModifiedOn": 1645161837811,
+        "name": "AWS EC2 instance with unrestricted outbound access to internet",
+        "policyId": "6c561dd0-e24b-4afe-b1fd-78808a45956d",
+        "policyType": "network",
+        "recommendation": "The following steps are recommended to restrict unrestricted access to the Internet:\n1. Visit the Network path Analysis from Source to Destination and review the network path components that allow internet access.\n2. Identify the network component on which restrictive rules can be implemented.\n3. Implement the required changes and make sure no other resources have been impacted due to these changes:\n a) The overly permissive Security Group rules can be made more restrictive.\n b) Move the instance inside a restrictive subnet if the instance does not need to have outbound access to the internet.\n c) Define a NAT rule to restrict traffic going to the Internet from the respective instance.",
+        "remediable": false,
+        "severity": "low",
+        "systemDefault": true
+    },
+    "policyId": "6c561dd0-e24b-4afe-b1fd-78808a45956d",
+    "reason": "RESOURCE_UPDATED",
+    "resource": {
+        "account": "whom",
+        "accountId": "12345678",
+        "additionalInfo": null,
+        "cloudAccountGroups": [
+            "Whom",
+            "sstraube-ag-prod",
+            "sstraube-ag-dev"
+        ],
+        "cloudServiceName": "Amazon EC2",
+        "cloudType": "aws",
+        "data": null,
+        "id": "i-0fe868d6358f41a3f",
+        "name": "NGFW v3",
+        "region": "AWS Virginia",
+        "regionId": "us-east-1",
+        "resourceApiName": "aws-ec2-describe-instances",
+        "resourceTs": 1654275839,
+        "resourceType": "INSTANCE",
+        "rrn": "rrn:aws:instance:us-east-1:XXXX::i-0feXXXX8f41a3f",
+        "url": "https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:instanceId=i-XXXXX"
+    },
+    "status": "open"
+}

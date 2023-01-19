@@ -1,0 +1,240 @@
+{
+    "Bcc": [],
+    "Body": "Hello,\r\n Please take a look at the following invoice at https://bad.com \r\n \r\n and also I saw this and thought of you! https://en.wikipedia.org/wiki/Sheep  \r\n \u003chtml\u003e\u003chead\u003e\r\n\u003cmeta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"\u003e\u003cmeta content=\"text/html; charset=utf-8\"\u003e\u003c/head\u003e\u003cbody\u003e\u003cdiv dir=\"ltr\"\u003e\u003cbr clear=\"all\"\u003e\u003cdiv\u003e\u003cdiv dir=\"ltr\" class=\"gmail_signature\"\u003e\u003cdiv dir=\"ltr\"\u003e\u003cdiv dir=\"ltr\"\u003e\u003cdiv dir=\"ltr\"\u003e\u003cdiv dir=\"ltr\"\u003e\u003cdiv\u003e\u003cb\u003e\u003cfont color=\"#000000\"\u003eNicholas Ericksen | Solutions Architect - Cortex/Demisto\u003c/font\u003e\u003c/b\u003e\u003c/div\u003e\u003cdiv\u003e\u003cfont color=\"#000000\"\u003eEmail:\u0026nbsp;\u003ca href=\"mailto:testuser@fakecompany.com\" target=\"_blank\"\u003etestuser@fakecompany.com\u003c/a\u003e\u003c/font\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/body\u003e\u003c/html\u003e",
+    "BodyType": "html",
+    "Cc": [],
+    "ConversationID": "AAQkADIxOGM1NzhjLTA1MGUtNDZkNS1iYmIzLWIxYjcxNTk3ODA4NQAQALBMKk1SSJ5BmlEnqmKXcpA=",
+    "CreatedTime": "2021-07-20T03:08:02Z",
+    "From": "testuser@bad.com",
+    "Headers": [
+        {
+            "name": "Received",
+            "value": "from CH0PR20MB3932.namprd20.prod.outlook.com (2603:10b6:610:d8::9) by MN2PR20MB3261.namprd20.prod.outlook.com with HTTPS; Tue, 20 Jul 2021 03:08:02 +0000"
+        },
+        {
+            "name": "Received",
+            "value": "from DM6PR03CA0101.namprd03.prod.outlook.com (2603:10b6:5:333::34) by CH0PR20MB3932.namprd20.prod.outlook.com (2603:10b6:610:d8::9) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4331.29; Tue, 20 Jul 2021 03:08:00 +0000"
+        },
+        {
+            "name": "Received",
+            "value": "from DM6NAM10FT004.eop-nam10.prod.protection.outlook.com (2603:10b6:5:333:cafe::a4) by DM6PR03CA0101.outlook.office365.com (2603:10b6:5:333::34) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4331.21 via Frontend Transport; Tue, 20 Jul 2021 03:08:01 +0000"
+        },
+        {
+            "name": "Received",
+            "value": "from mx0b-00169c01.pphosted.com (67.231.156.123) by DM6NAM10FT004.mail.protection.outlook.com (10.13.152.222) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4331.21 via Frontend Transport; Tue, 20 Jul 2021 03:08:00 +0000"
+        },
+        {
+            "name": "Received",
+            "value": "from pps.filterd (m0048189.ppops.net [127.0.0.1])\tby mx0b-00169c01.pphosted.com (8.16.0.43/8.16.0.43) with SMTP id 16K33Ggg011818\tfor \u003calice@goodcompany.onmicrosoft.com\u003e; Mon, 19 Jul 2021 20:07:59 -0700"
+        },
+        {
+            "name": "Received",
+            "value": "from mail-pj1-f70.google.com (mail-pj1-f70.google.com [209.85.216.70])\tby mx0b-00169c01.pphosted.com with ESMTP id 39vyu8qsbu-1\t(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NOT)\tfor \u003calice@goodcompany.onmicrosoft.com\u003e; Mon, 19 Jul 2021 20:07:59 -0700"
+        },
+        {
+            "name": "Received",
+            "value": "by mail-pj1-f70.google.com with SMTP id rj3-20020a17090b3e83b02901762a8fbff0so1086677pjb.1        for \u003calice@goodcompany.onmicrosoft.com\u003e; Mon, 19 Jul 2021 20:07:59 -0700 (PDT)"
+        },
+        {
+            "name": "Authentication-Results",
+            "value": "spf=pass (sender IP is 67.231.156.123) smtp.mailfrom=fakecompany.com; goodcompany.onmicrosoft.com; dkim=pass (signature was verified) header.d=fakecompany.com;goodcompany.onmicrosoft.com; dmarc=pass action=none header.from=fakecompany.com;compauth=pass reason=100"
+        },
+        {
+            "name": "Received-SPF",
+            "value": "Pass (protection.outlook.com: domain of fakecompany.com designates 67.231.156.123 as permitted sender) receiver=protection.outlook.com; client-ip=67.231.156.123; helo=mx0b-00169c01.pphosted.com;"
+        },
+        {
+            "name": "DKIM-Signature",
+            "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=fakecompany.com; h=mime-version : from : date : message-id : subject : to : content-type; s=PPS12012017; bh=fNN5gF9c8iZo7VNuK3HDbpXKpT7TClGsoZ+zYwhd6Fk=; b=fLi1k8ZpAE4bazuqTe7UEh5LjpMiKcAoDGbc6WZc+KjML7urSSYPnCtqsB8QM3x381Sy CVRoa4cMVdYD1SDySf7BDusqfxInmK2KPpPmLCt6Q0FjMzIvlZQc4wFaxBGZc9/BOzYF mirXZGbWKYKFz3l8/jJdnCfx/v/uKdw3KyZKSEJjRK0xR6cRIvDFVWqaEdjI7KSqP4FJ dchi7PZUSdPn/PB2epR59p2Z59xqxzsgNQkjIn04lXL22a3DorXEZBrih0zOCTfcLnEt sBQiag+0T4mJQYk0S/31LD+NJtV8c/uSp9dw/Cs3JQBn2hU6X0q+midNzs47roeHkiur ig== "
+        },
+        {
+            "name": "DKIM-Signature",
+            "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=fakecompany-com.20150623.gappssmtp.com; s=20150623;        h=mime-version:from:date:message-id:subject:to;        bh=fNN5gF9c8iZo7VNuK3HDbpXKpT7TClGsoZ+zYwhd6Fk=;        b=0TjL/os2xOPWdBt6XRS96FY0RJQ9+/hRBmTe22jnbQU52VhHQ2WJ41eg7Z96KptFaF         z3vyZMAvsgZ99GgnI0e6/8RizTnrk/wfCp9bib8vNzmur75GN1hXaD/3wjMxcMdz38Nx         BXDTbQrEg63fqIV4Z8EaNNxjTwyyagsIstur8aAXvPwNrHiTgjnmeRBh/rj1eDqNN86Z         Jvr1GbcuWaOAIFXaw4y1YETxryp7YSCWY3PiUVMQDG/SGsrd+ZVeTftfyU9u+gkDT3MQ         dV0UbFGEZk+f3ySZesNMt4FWkXXznENlOM6jTqxFqFu7ZtqQfWlUBxceDZmDIh4VWwaL         F5/g=="
+        },
+        {
+            "name": "X-Google-DKIM-Signature",
+            "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20161025;        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;        bh=fNN5gF9c8iZo7VNuK3HDbpXKpT7TClGsoZ+zYwhd6Fk=;        b=tYUOx2LZD+0WfxsSreUTohwCnmv0TzdZ81pefZZ9Go7FtUjh9cP+Fua6gtde0ol9yj         lFAS3oZb69LHZkmjWavQy9+N4+C7tRjVVQ7bAHb22Ibui8jB+JNi7ZsNJQf6svFPmtXg         60wF3mo+zYjLMcC2CZ0UopGRc3i0ezcAPDrZMRkQRI0ANEX+wAlG/OoY3uKV+d9ZYTkn         fjEvZ0knc5LaxIpY79aBdBN22ylwNYijNlRYD7wCJE3fPaR6vkNiCmlteFLeZ37kzvjj         scSC48vaQvyOCAzTshiKKZ53fZYE94VHZ3PgymuoEjokLlZ7AxtDqWqqHXl5zH2sCoWI         J67A=="
+        },
+        {
+            "name": "X-Gm-Message-State",
+            "value": "AOAM533wPAX7REasgGNr3B1O8iXuTzOHhsb9esLST0J3CBoCLj/mVm9D\tm+mtXxVIFf3EkS6OZJgP6avPMJVKumkVBDlZPd0Wi7CVPbJAqDZUWAxlUs7cHu/CmyLLkbJ859l\txsVikb+UMxyCWjGuZYnMPw9j5TuZqguQSK5cwhJmBPnLE"
+        },
+        {
+            "name": "X-Received",
+            "value": "by 2002:a62:78cd:0:b029:327:de34:ad60 with SMTP id t196-20020a6278cd0000b0290327de34ad60mr29278206pfc.18.1626750478506;        Mon, 19 Jul 2021 20:07:58 -0700 (PDT)"
+        },
+        {
+            "name": "X-Received",
+            "value": "by 2002:a62:78cd:0:b029:327:de34:ad60 with SMTP id t196-20020a6278cd0000b0290327de34ad60mr29278188pfc.18.1626750478160; Mon, 19 Jul 2021 20:07:58 -0700 (PDT)"
+        },
+        {
+            "name": "X-Google-Smtp-Source",
+            "value": "ABdhPJz7RghNMCukCkadqUhfxjBOBNMIkrf5nO9ZmY/2tfya6Nyj1CwCu4H3oBrn7krAeCIIESvwIZQnTgz52CJ/kcY="
+        },
+        {
+            "name": "MIME-Version",
+            "value": "1.0"
+        },
+        {
+            "name": "Date",
+            "value": "Mon, 19 Jul 2021 23:07:47 -0400"
+        },
+        {
+            "name": "Message-ID",
+            "value": "\u003cCAC5BeuHd3PO9_=c2xgiWX+Ci+2nzd9pV77ZBBgyZRFz3yS_r3Q@mail.gmail.com\u003e"
+        },
+        {
+            "name": "Subject",
+            "value": "TESTING"
+        },
+        {
+            "name": "Content-Type",
+            "value": "multipart/alternative"
+        },
+        {
+            "name": "X-Proofpoint-ORIG-GUID",
+            "value": "JznQis1Gxbq-8RzD1fMp86tnDfXJ4SBP"
+        },
+        {
+            "name": "X-Proofpoint-GUID",
+            "value": "JznQis1Gxbq-8RzD1fMp86tnDfXJ4SBP"
+        },
+        {
+            "name": "X-Proofpoint-Virus-Version",
+            "value": "vendor=fsecure engine=2.50.10434:6.0.391,18.0.790 definitions=2021-07-20_01:2021-07-19,2021-07-20 signatures=0"
+        },
+        {
+            "name": "X-Proofpoint-Spam-Details",
+            "value": "rule=outbound_spam_notspam policy=outbound_spam score=0 spamscore=0 phishscore=0 adultscore=0 mlxlogscore=437 impostorscore=0 lowpriorityscore=0 priorityscore=1501 mlxscore=0 bulkscore=0 malwarescore=0 clxscore=1015 suspectscore=0 classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-2104190000 definitions=main-2107200016"
+        },
+        {
+            "name": "Return-Path",
+            "value": "testuser@fakecompany.com"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-ExpirationStartTime",
+            "value": "20 Jul 2021 03:08:00.8199 (UTC)"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-ExpirationStartTimeReason",
+            "value": "OriginalSubmit"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-ExpirationInterval",
+            "value": "1:00:00:00.0000000"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-ExpirationIntervalReason",
+            "value": "OriginalSubmit"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-Network-Message-Id",
+            "value": "b97765de-7318-4b02-046c-08d94b2b952f"
+        },
+        {
+            "name": "X-EOPAttributedMessage",
+            "value": "0"
+        },
+        {
+            "name": "X-EOPTenantAttributedMessage",
+            "value": "a54e539b-dd16-4fc2-af30-66dfce7c6563:0"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-MessageDirectionality",
+            "value": "Incoming"
+        },
+        {
+            "name": "X-MS-PublicTrafficType",
+            "value": "Email"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-AuthSource",
+            "value": "DM6NAM10FT004.eop-nam10.prod.protection.outlook.com"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-AuthAs",
+            "value": "Anonymous"
+        },
+        {
+            "name": "X-MS-Office365-Filtering-Correlation-Id",
+            "value": "b97765de-7318-4b02-046c-08d94b2b952f"
+        },
+        {
+            "name": "X-MS-TrafficTypeDiagnostic",
+            "value": "CH0PR20MB3932:"
+        },
+        {
+            "name": "X-MS-Oob-TLC-OOBClassifiers",
+            "value": "OLM:1728;"
+        },
+        {
+            "name": "X-MS-Exchange-Organization-SCL",
+            "value": "1"
+        },
+        {
+            "name": "X-Microsoft-Antispam",
+            "value": "BCL:0;"
+        },
+        {
+            "name": "X-Forefront-Antispam-Report",
+            "value": "CIP:67.231.156.123;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mx0b-00169c01.pphosted.com;PTR:mx0b-00169c01.pphosted.com;CAT:NONE;SFS:(3480700007)(26005)(86362001)(6916009)(8676002)(564344004)(336012)(7116003)(1096003)(5660300002)(356005)(33964004)(42186006)(7596003)(7636003)(6666004)(9686003)(55446002);DIR:INB;"
+        },
+        {
+            "name": "X-MS-Exchange-CrossTenant-OriginalArrivalTime",
+            "value": "20 Jul 2021 03:08:00.5840 (UTC)"
+        },
+        {
+            "name": "X-MS-Exchange-CrossTenant-Network-Message-Id",
+            "value": "b97765de-7318-4b02-046c-08d94b2b952f"
+        },
+        {
+            "name": "X-MS-Exchange-CrossTenant-Id",
+            "value": "a54e539b-dd16-4fc2-af30-66dfce7c6563"
+        },
+        {
+            "name": "X-MS-Exchange-CrossTenant-AuthSource",
+            "value": "DM6NAM10FT004.eop-nam10.prod.protection.outlook.com"
+        },
+        {
+            "name": "X-MS-Exchange-CrossTenant-AuthAs",
+            "value": "Anonymous"
+        },
+        {
+            "name": "X-MS-Exchange-CrossTenant-FromEntityHeader",
+            "value": "Internet"
+        },
+        {
+            "name": "X-MS-Exchange-Transport-CrossTenantHeadersStamped",
+            "value": "CH0PR20MB3932"
+        },
+        {
+            "name": "X-MS-Exchange-Transport-EndToEndLatency",
+            "value": "00:00:01.8478472"
+        },
+        {
+            "name": "X-MS-Exchange-Processed-By-BccFoldering",
+            "value": "15.20.4331.034"
+        },
+        {
+            "name": "X-Microsoft-Antispam-Mailbox-Delivery",
+            "value": "ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);"
+        },
+        {
+            "name": "X-Microsoft-Antispam-Message-Info",
+            "value": "ugWkH81tbaoM57SZmv7+SraFFRZfdx4Aw3xi0OgxhdllVVf030BL3TwPiSI0z3M6wI5KmBOdQJO0Gjt+CR4LXPYrQGg0456G4r8F7Y9qUVwm3YYbTb7CKAgLsB1k++qel124kSvZyo1NYrvQ/D1Pte5Tfcx//XAn5ois7rCKwGXtf27ml8r089qYHau4NM0M04sMZd0SFY1rE2Xd3fe5Q0+eawBonQ8LCJreHvwSCoRnCl4SzU9vrAfNpCZzKcaa63xYPJem1VGghu1CRH5qn5SkyJ0RP+PDVDCixY3HjqACytjIqVFNVOO4kxyplmiOAky1V0iXH/LDdpxzo13N+5MHNtaXt7jvWIS8AOjDTRBybEzAZrqgwnfVDpSPgCeZpmSc2DJq9X8JtTnW5i4R8peNJReYZ4+pz6NDZYLz79r79j3mLE6za1bJLfbH5cxYeGoUy6sy+vbzcmtPqkcRpCwy0bEeuh5A0Pw65en2cw2SSuLQ6fxcvc60lt/vBBxFfMlfrXccnpmzVDud+uURoYh3EK2qxLPUzrvkcpg7an7Ic1WS1dzcE3qe/rIjxbt5ZAJ6+vJXj+11oH2rD7TBEUFvFvjCoZa8tt0vMrWxyOVo7Mv/tdWiRulKWRVeN8nxMxJSt9JXWeu4mHQD8VdhtR5cUwogmbdiI/VIJPskh6XH6G+T7dhpJO1WUYEUjZRx2C3cJAY1095z/+fdQkzQt/VfaWc8nslecm5Ahwm+OxeHmIRzER6+eYZlNF8YTiiMZZXBDkSo2Urzyr1ZT53tZZGJCTSt2dYDO5KVroywHPdZBQldgGrBbF9FiJlp7G/LreiFyOJObXpj0hdIDxqGa374UUHIXRdW1hXcHDd+pPkV0sE2AxuVOnG4q41/FQ33GrNYz6A6F+UJsMc8444Za+HjFy21M+jbzFEG9U+fu/xEycsRpqz61a4NWxGuTfd+snDqJIpkykR0zEDCU/b2UdeBSnPrt9lF1kpKu6DUJBY4I5k90cImAm45Z+0WoHZy9RJONO2YqB3mFOa3q2Wp4O/AL5fH2x96oyDHdaIG43EqJHn9evK5EW6DSBvjYc/Qi2fHfp5EeevRSR/rUB16R8Szeut8S8BhcRsFkX8k2EZGaYoaaw2qKnvaV9lR4N48etvLnywDG8Vgn4pmcW/NJQqwcCsTeF50IKy910hIJg2KmSP+KI6JqbxykfapWEF85mj+bFrph0XyYQI42g8ovwIxpFQtiR+YMF3UAIMxNyTWSPSjNZFBCBhqzsZmpzDlOpC0QyyZRUjXHmG9DIhSKDv1nHos5LDVZ6b8VD0HuKcRgRq5aaz0sMLMxXllfFz5IfGe6l2wUHevUec6JhqeyDaaUDmfnXB4JrEHHkIYY9eAvdXTlBm2jF3crWpb5dhRrjRfxrrtvqjZgkgF6r55ryKS0hTLCZbG1fQkLty7ve20g7LmXbwv5WoFYIFuzxSrqymHoXLEG+VetBx1oNfb8OlAIaLdg7+To0sjAr6o9Kol8CA2H0FL4DaG2pGEqm03eua1cvF0zUGrVWS2jytdKzCXB2o9kUZJihKIY2J6HSxFlFlayDT45nG19KgpjIlPpX2DvTbBHd2MRmVRprrH339h374jDpXywM5E5YZdJec="
+        }
+    ],
+    "ID": "AQMkADIxOGM1NzhjLTA1MGUtNDZkNS1iYgEzLWIxYjcxNTk3ODA4NQBGAAADXH2SWkrL1UK_QnrvHVLRZAcAylabCacqoEGn8tkw9uQMAAADAQwAAADKVpsJpyqgQafy2TD25AwAAAHfWwZTAAAA",
+    "Importance": "normal",
+    "IsDraft": false,
+    "IsRead": false,
+    "MessageID": "\u003cCAC5BeuHd3PO9_=c2xgiWX+Ci+2nzd9pV77ZBBgyZRFz3yS_r3Q@mail.gmail.com\u003e",
+    "ModifiedTime": "2021-07-20T03:08:03Z",
+    "ReceivedTime": "2021-07-20T03:08:02Z",
+    "Sender": "testuser@fakecompany.com",
+    "SentTime": "2021-07-20T03:07:47Z",
+    "Subject": "Financial Account",
+    "To": [
+        "alice@goodcompany.onmicrosoft.com"
+    ]
+}

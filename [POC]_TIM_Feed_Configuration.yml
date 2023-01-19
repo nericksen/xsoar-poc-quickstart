@@ -1,0 +1,162 @@
+id: b13a9fa1-8d46-4383-8433-3aae776553f3
+version: 15
+vcShouldKeepItemLegacyProdMachine: false
+name: '[POC] TIM Feed Configuration'
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: cdb0df67-c981-419d-8ba1-0ac60fa11c69
+    type: start
+    task:
+      id: cdb0df67-c981-419d-8ba1-0ac60fa11c69
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "2"
+    separatecontext: false
+    continueonerrortype: ""
+    view: |-
+      {
+        "position": {
+          "x": 50,
+          "y": 50
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+    isoversize: false
+    isautoswitchedtoquietmode: false
+  "2":
+    id: "2"
+    taskid: 9198373c-bf34-4fc7-8aa3-561d86dfda69
+    type: regular
+    task:
+      id: 9198373c-bf34-4fc7-8aa3-561d86dfda69
+      version: -1
+      name: Create Integration Instance
+      description: send HTTP PUT request
+      script: '|||demisto-api-put'
+      type: regular
+      iscommand: true
+      brand: ""
+    nexttasks:
+      '#error#':
+      - "3"
+      '#none#':
+      - "4"
+    scriptarguments:
+      body:
+        complex:
+          root: ${inputs.Config
+          accessor: listdata}
+          transformers:
+          - operator: Stringify
+      uri:
+        simple: /settings/integration
+    separatecontext: false
+    continueonerror: true
+    continueonerrortype: errorPath
+    view: |-
+      {
+        "position": {
+          "x": 50,
+          "y": 195
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+    isoversize: false
+    isautoswitchedtoquietmode: false
+  "3":
+    id: "3"
+    taskid: c379b726-38d3-4e2d-8735-3b76d52abb3c
+    type: regular
+    task:
+      id: c379b726-38d3-4e2d-8735-3b76d52abb3c
+      version: -1
+      name: Print Error
+      description: Prints text to war room (Markdown supported)
+      scriptName: Print
+      type: regular
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "4"
+    scriptarguments:
+      value:
+        simple: 'Error configuring instance: ${inputs.Config.listdata.name}'
+    separatecontext: false
+    continueonerrortype: ""
+    view: |-
+      {
+        "position": {
+          "x": 280,
+          "y": 380
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+    isoversize: false
+    isautoswitchedtoquietmode: false
+  "4":
+    id: "4"
+    taskid: f6358f26-afb2-42da-830c-4f8bb8a15e95
+    type: title
+    task:
+      id: f6358f26-afb2-42da-830c-4f8bb8a15e95
+      version: -1
+      name: FIN
+      type: title
+      iscommand: false
+      brand: ""
+    separatecontext: false
+    continueonerrortype: ""
+    view: |-
+      {
+        "position": {
+          "x": 50,
+          "y": 580
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+    isoversize: false
+    isautoswitchedtoquietmode: false
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 595,
+        "width": 610,
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+inputs:
+- key: Config
+  value:
+    simple: ${lists.CloudFlareFeedSettings}
+  required: false
+  description: The stringifyed list of the Integration Config JSON.
+  playbookInputQuery: null
+outputs: []
+quiet: true
