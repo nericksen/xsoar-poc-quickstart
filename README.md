@@ -18,14 +18,19 @@ will auto install popular marketplace packs and configure some reccomended TIM f
 
 
 ## Instructions (Quick Start)
-1. Start by deploying your XSOAR instance or logging into your hosted instance.
-2. Generate an API key with admin privledges and add it to the "Demisto API" integration
+0. Start by deploying your XSOAR instance or logging into your hosted instance.
+1. Install playbooks and Demisto API XSIAM integration located in this repo.
+2. Generate an API key with admin privledges and add it to the "Demisto API XSIAM" integration
 3. Install the "XSOAR CI/CD" content pack from the marketplace.
-4. Upload the POC quick start configuration playbook
-5. Create a "Configuration Setup" incident type with the `xsoar_config.json` attached and no custom packs to install
-6. Once the packs are installed run the Quickstart configuration playbook to setup and initialize the TIM feeds.
+4. Create a "Configuration Setup" incident type with the `xsoar_config.json` attached and no custom packs to install
+5. Once the packs are installed run the "[POC] MAIN Tim Feed Configururation" configuration playbook on top of the Configuration setup playbook and initialize the TIM feeds.
 
 
 ### Known Limitations
 * Currently there is only content for auto deploying TIM feeds and use cases
 * In the future this will configure incident use cases as well. 
+
+## Scratch Pad
+
+0. Upload the zip bundle in content import section (for custom incident content) TBD
+0. Enable additional Enrichment sources
