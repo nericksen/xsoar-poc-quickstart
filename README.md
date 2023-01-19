@@ -26,6 +26,8 @@ will auto install popular marketplace packs and configure some reccomended TIM f
 5. Once the packs are installed run the "[POC] MAIN Tim Feed Configururation" configuration playbook on top of the Configuration setup playbook and initialize the TIM feeds.
 
 
+[Slide Deck](https://docs.google.com/presentation/d/1bKIFyOPqaQIxPOPTtu_kIzxh_-eBaZs6XUQkWE8gGQc/edit?usp=sharing)
+
 ### Known Limitations
 * Currently there is only content for auto deploying TIM feeds and use cases
 * In the future this will configure incident use cases as well. 
